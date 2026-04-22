@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { X } from 'lucide-svelte';
+	import { Menu, X } from 'lucide-svelte';
 
 	let isMenuOpen = $state(false);
-	const toogleMenu = () => {
+	const toggleMenu = () => {
 		isMenuOpen = !isMenuOpen;
 	};
 </script>
@@ -16,39 +16,70 @@
 				data-alt="Quickened Creations Brand Logo gold icon"
 				src="logo.jpg"
 			/>
-			<span
-				class="font-serif text-2xl font-bold tracking-tighter text-zinc-900 dark:text-zinc-50"
-				style="">Quickened Creations</span
+			<span class="font-serif text-2xl font-bold tracking-tighter text-zinc-900 dark:text-zinc-50"
+				>Quickened Creations</span
 			>
 		</div>
+		<!-- Desktop Nav-Bar  -->
 		<div class="hidden items-center space-x-10 md:flex">
 			<a
 				class="font-serif text-lg tracking-tight text-zinc-600 italic transition-colors duration-500 hover:scale-[1.02] hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
-				href="#portfolio"
-				style="">Portfolio</a
+				href="#portfolio">Portfolio</a
 			>
 			<a
 				class="font-serif text-lg tracking-tight text-zinc-600 italic transition-colors duration-500 hover:scale-[1.02] hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
-				href="#services"
-				style="">Services</a
+				href="#services">Services</a
 			>
 			<a
 				class="font-serif text-lg tracking-tight text-zinc-600 italic transition-colors duration-500 hover:scale-[1.02] hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
-				href="#process"
-				style="">Process</a
+				href="#process">Process</a
 			>
 			<a
 				class="font-serif text-lg tracking-tight text-zinc-600 italic transition-colors duration-500 hover:scale-[1.02] hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
-				href="#about"
-				style="">About</a
+				href="#about">About</a
 			>
 			<button
 				class="bg-primary-container text-on-primary-container ease-pneuma rounded-sm px-6 py-2 font-semibold transition-transform duration-500 hover:scale-[1.02] active:scale-95"
-				style="">Inquiry</button
+				>Inquiry</button
 			>
 		</div>
-		<button onclick={toogleMenu} class="text-zinc-900 md:hidden">
-			<X class="h-10 w-16 cursor-pointer" />
+		<!-- Hamburger for mobile nav  -->
+		<button onclick={toggleMenu} class="z-50 text-white md:hidden" aria-label="Toggle menu">
+			{#if isMenuOpen}
+				<X />
+			{:else}
+				<Menu />
+			{/if}
 		</button>
 	</div>
 </nav>
+
+<!-- Mobile Menu Overlay -->
+{#if isMenuOpen}
+	<div
+		class="fixed inset-0 z-40 flex flex-col items-center justify-center gap-10 bg-black/90 md:hidden"
+	>
+		<ul class="flex flex-col items-center gap-8 text-2xl text-white">
+			<li>
+				<a href="#about" onclick={toggleMenu} class="transition-colors hover:text-yellow-400">
+					About
+				</a>
+			</li>
+			<li>
+				<a href="#services" onclick={toggleMenu} class="transition-colors hover:text-yellow-400">
+					Services
+				</a>
+			</li>
+			<li>
+				<a href="#portfolio" onclick={toggleMenu} class="transition-colors hover:text-yellow-400">
+					Portfolio
+				</a>
+			</li>
+			<li>
+				<a href="#contact" onclick={toggleMenu} class="transition-colors hover:text-yellow-400">
+					Contact
+				</a>
+			</li>
+		</ul>
+	</div>
+{/if}
