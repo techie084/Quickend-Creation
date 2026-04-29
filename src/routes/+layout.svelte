@@ -38,22 +38,25 @@
 		property="og:description"
 		content="Spirit-inspired creativity expressed through excellence."
 	/>
-	<meta property="og:image" content="https://quickened-creations.vercel.app/og-image.png" />
-	<meta property="og:url" content="https://quickened-creations.vecel.app" />
+	<meta property="og:image" content="https://quickend-creations.vercel.app/og-image.png" />
+	<meta property="og:url" content="https://quickend-creations.vercel.app" />
 	<meta property="og:type" content="website" />
 	<meta property="og:locale" content="en_US" />
-	<meta property="og:keywords" content="" />
+	<meta
+		property="og:keywords"
+		content="creative agency, pneuma inspired, videography, music production, graphic design, social media management,software Development,web design,design studio,innovative design,creative solutions, branding, design"
+	/>
+	<meta property="og:site_name" content="Quickened Creations, Pneuma Inspired Creative Agency" />
 
 	<!-- Twitter/X Card -->
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="Quickened Creations | Pneuma Inspired" />
-	<meta name="twitter:image" content="https://quickenedcreations.com/og-image.png" />
+	<meta property="twitter:image" content="https://quickend-creations.vercel.app/og-image.png" />
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:title" content="Quickened Creations | Pneuma Inspired" />
+	<meta property="twitter:description" content="Quickened Creations | Pneuma Inspired" />
 
 	<!-- SEO -->
 	<meta name="robots" content="index, follow" />
-	<link rel="canonical" href="https://quickened-creations.vercel.app" />
+	<link rel="canonical" href="https://quickend-creations.vercel.app" />
 </svelte:head>
 
-<main class="scroll-smooth">
-	{@render children()}
-</main>
+{@render children()}

@@ -1,15 +1,15 @@
 <script lang="ts">
-	import { ArrowRight } from 'lucide-svelte';
+	import { ArrowRight, Sparkles, TrophyIcon, BadgeCheck, SlidersHorizontal } from 'lucide-svelte';
 </script>
 
-<section class="bg-surface-container-lowest px-8 py-32 lg:px-24" id="portfolio">
+<section class="bg-[#ffffff] px-8 py-32 lg:px-24" id="portfolio">
 	<div class="mx-auto max-w-screen-2xl">
 		<div class="mb-16 flex flex-col items-baseline justify-between gap-8 md:flex-row">
-			<h2 class="font-headline text-on-background text-5xl md:text-6xl">
+			<h2 class="font-headline text-5xl text-[#1a1c1c] md:text-6xl">
 				The Living <span class="italic">Archive</span>
 			</h2>
 			<a
-				class="font-label text-primary flex items-center gap-2 text-sm tracking-widest uppercase transition-transform duration-500 hover:translate-x-2"
+				class="flex items-center gap-2 font-label text-sm tracking-widest text-[#705d00] uppercase transition-transform duration-500 hover:translate-x-2"
 				href="#portfolio"
 			>
 				<ArrowRight />
@@ -26,7 +26,7 @@
 				<div
 					class="absolute inset-0 flex flex-col justify-end bg-zinc-950/40 p-12 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
 				>
-					<span class="text-primary-container font-label mb-2 text-xs tracking-widest uppercase"
+					<span class="mb-2 font-label text-xs tracking-widest text-[#ffd700] uppercase"
 						>Music Video</span
 					>
 					<h4 class="font-headline text-3xl text-white">Modern Symphony</h4>
@@ -42,7 +42,7 @@
 				<div
 					class="absolute inset-0 flex flex-col justify-end bg-zinc-950/40 p-8 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
 				>
-					<span class="text-primary-container font-label mb-2 text-xs tracking-widest uppercase"
+					<span class="text[#ffd700] mb-2 font-label text-xs tracking-widest uppercase"
 						>Branding</span
 					>
 					<h4 class="font-headline text-2xl text-white">Aura Minimalist</h4>
@@ -58,7 +58,7 @@
 				<div
 					class="absolute inset-0 flex flex-col justify-end bg-zinc-950/40 p-8 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
 				>
-					<span class="text-primary-container font-label mb-2 text-xs tracking-widest uppercase"
+					<span class="mb-2 font-label text-xs tracking-widest text-[#ffd700] uppercase"
 						>Cinematography</span
 					>
 					<h4 class="font-headline text-2xl text-white">Horizon Bound</h4>
@@ -74,7 +74,7 @@
 				<div
 					class="absolute inset-0 flex flex-col justify-end bg-zinc-950/40 p-12 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
 				>
-					<span class="text-primary-container font-label mb-2 text-xs tracking-widest uppercase"
+					<span class="mb-2 font-label text-xs tracking-widest text-[#ffd700] uppercase"
 						>Campaign</span
 					>
 					<h4 class="font-headline text-3xl text-white">Urban Pulse 2024</h4>
@@ -85,80 +85,82 @@
 </section>
 
 <!-- Process Section -->
-<section class="bg-surface px-8 py-32 lg:px-24">
+<section class="bg-[#f9f9f9] px-8 py-32 lg:px-24">
 	<div class="mx-auto mb-24 max-w-4xl text-center">
-		<h2 class="font-headline mb-6 text-5xl">
+		<h2 class="mb-6 font-headline text-5xl">
 			The Pneuma <span class="italic">Method</span>
 		</h2>
-		<p class="text-secondary text-lg">
+		<p class="text-lg text-[#5f5e5e]">
 			A deliberate, four-stage evolution from initial spark to final delivery.
 		</p>
 	</div>
 	<div class="mx-auto grid max-w-7xl grid-cols-1 gap-12 md:grid-cols-4">
 		<div class="group relative">
 			<div
-				class="font-headline text-primary-container/10 group-hover:text-primary-container/20 pointer-events-none absolute -top-16 -left-4 text-[8rem] transition-colors duration-500"
+				class="pointer-events-none absolute -top-16 -left-4 font-headline text-[8rem] text-[#ffd700]/10 transition-colors duration-500 group-hover:text-[#ffd700]/20"
 			>
 				01
 			</div>
 			<div class="relative z-10">
 				<span
-					class="material-symbols-outlined text-primary mb-6 text-3xl"
+					class="mb-6 text-3xl text-[#705d00]"
 					data-icon="search_spark"
-					style="">search_spark</span
+					id="material-symbols-outlined"><Sparkles class="mb-4" /></span
 				>
-				<h4 class="font-headline mb-4 text-2xl">Discover</h4>
-				<p class="text-secondary leading-relaxed">
+				<h4 class="mb-4 font-headline text-2xl">Discover</h4>
+				<p class="leading-relaxed text-[#5f5e5e]">
 					Deep immersion into your brand's essence and project objectives.
 				</p>
 			</div>
 		</div>
 		<div class="group relative">
 			<div
-				class="font-headline text-primary-container/10 group-hover:text-primary-container/20 pointer-events-none absolute -top-16 -left-4 text-[8rem] transition-colors duration-500"
+				class="pointer-events-none absolute -top-16 -left-4 font-headline text-[8rem] text-[#ffd700]/10 transition-colors duration-500 group-hover:text-[#ffd700]/20"
 			>
 				02
 			</div>
 			<div class="relative z-10">
 				<span
-					class="material-symbols-outlined text-primary mb-6 text-3xl"
+					class="mb-6 text-3xl text-[##705d00]"
 					data-icon="auto_awesome"
-					style="">auto_awesome</span
+					id="material-symbols-outlined"><TrophyIcon class="mb-4" /></span
 				>
-				<h4 class="font-headline mb-4 text-2xl">Create</h4>
-				<p class="text-secondary leading-relaxed">
+				<h4 class="mb-4 font-headline text-2xl">Create</h4>
+				<p class="leading-relaxed text-[#5f5e5e]">
 					Artisanal execution utilizing premium tools and refined intuition.
 				</p>
 			</div>
 		</div>
 		<div class="group relative">
 			<div
-				class="font-headline text-primary-container/10 group-hover:text-primary-container/20 pointer-events-none absolute -top-16 -left-4 text-[8rem] transition-colors duration-500"
+				class="pointer-events-none absolute -top-16 -left-4 font-headline text-[8rem] text-[#ffd700]/10 transition-colors duration-500 group-hover:text-[#ffd700]/20"
 			>
 				03
 			</div>
 			<div class="relative z-10">
-				<span class="material-symbols-outlined text-primary mb-6 text-3xl" data-icon="tune"
-					>tune</span
+				<span class="mb-6 text-3xl text-[#705d00]" id="material-symbols-outlined " data-icon="tune"
+					><SlidersHorizontal class="mb-4" /></span
 				>
-				<h4 class="font-headline mb-4 text-2xl">Refine</h4>
-				<p class="text-secondary leading-relaxed">
+				<h4 class="mb-4 font-headline text-2xl">Refine</h4>
+				<p class="leading-relaxed text-[#5f5e5e]">
 					Collaborative iteration to polish every detail to absolute perfection.
 				</p>
 			</div>
 		</div>
 		<div class="group relative">
 			<div
-				class="font-headline text-primary-container/10 group-hover:text-primary-container/20 pointer-events-none absolute -top-16 -left-4 text-[8rem] transition-colors duration-500"
+				class="pointer-events-none absolute -top-16 -left-4 font-headline text-[8rem] text-[#ffd700]/10 transition-colors duration-500 group-hover:text-[#ffd700]/20"
 			>
 				04
 			</div>
 			<div class="relative z-10">
-				<span class="material-symbols-outlined text-primary mb-6 text-3xl" data-icon="verified"
-					>verified</span
+				<span
+					class="mb-6 text-3xl text-[#705d00]"
+					id="material-symbols-outlined"
+					data-icon="verified"><BadgeCheck class="mb-4" /></span
 				>
-				<h4 class="font-headline mb-4 text-2xl">Deliver</h4>
-				<p class="text-secondary leading-relaxed">
+				<h4 class="mb-4 font-headline text-2xl">Deliver</h4>
+				<p class="leading-relaxed text-[#5f5e5e]">
 					High-impact deployment of your vision across all intended mediums.
 				</p>
 			</div>
