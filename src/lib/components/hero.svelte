@@ -7,7 +7,7 @@
 	class="relative flex min-h-230.25 items-center overflow-hidden px-8 lg:px-24"
 	id="bg-breath"
 >
-	<div class="absolute inset-0 z-0 opacity-40">
+	<div class="absolute inset-0 z-0 opacity-80">
 		<div
 			class="absolute top-[-10%] right-[-10%] h-150 w-150 rounded-full bg-[#ffd700]/20 blur-[120px]"
 		></div>

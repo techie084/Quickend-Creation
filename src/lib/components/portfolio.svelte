@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { ArrowRight, Sparkles, TrophyIcon, BadgeCheck, SlidersHorizontal } from 'lucide-svelte';
+	import { resolve } from '$app/paths';
 </script>
 
 <section class="bg-[#ffffff] px-8 py-32 lg:px-24" id="portfolio">
@@ -10,13 +11,14 @@
 			</h2>
 			<a
 				class="flex items-center gap-2 font-label text-sm tracking-widest text-[#705d00] uppercase transition-transform duration-500 hover:translate-x-2"
-				href="#portfolio"
+				href={resolve('/project')}
 			>
+				EXPLORE ALL PROJECT
 				<ArrowRight />
 			</a>
 		</div>
 		<div class="grid h-auto grid-cols-1 gap-8 md:grid-cols-12">
-			<div class="group relative aspect-video overflow-hidden md:col-span-8">
+			<div class="group relative aspect-video cursor-pointer overflow-hidden md:col-span-8">
 				<img
 					alt="Modern Music Video"
 					class="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-110"
@@ -32,7 +34,7 @@
 					<h4 class="font-headline text-3xl text-white">Modern Symphony</h4>
 				</div>
 			</div>
-			<div class="group relative aspect-3/4 overflow-hidden md:col-span-4">
+			<div class="group relative aspect-3/4 cursor-pointer overflow-hidden md:col-span-4">
 				<img
 					alt="Minimalist Brand Identity"
 					class="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-110"
@@ -48,7 +50,7 @@
 					<h4 class="font-headline text-2xl text-white">Aura Minimalist</h4>
 				</div>
 			</div>
-			<div class="group relative aspect-square overflow-hidden md:col-span-4">
+			<div class="group relative aspect-square cursor-pointer overflow-hidden md:col-span-4">
 				<img
 					alt="Drone Coverage"
 					class="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-110"
@@ -64,7 +66,7 @@
 					<h4 class="font-headline text-2xl text-white">Horizon Bound</h4>
 				</div>
 			</div>
-			<div class="group relative aspect-21/9 overflow-hidden md:col-span-8">
+			<div class="group relative aspect-21/9 cursor-pointer overflow-hidden md:col-span-8">
 				<img
 					alt="Social Campaign"
 					class="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-110"
@@ -97,7 +99,7 @@
 	<div class="mx-auto grid max-w-7xl grid-cols-1 gap-12 md:grid-cols-4">
 		<div class="group relative">
 			<div
-				class="pointer-events-none absolute -top-16 -left-4 font-headline text-[8rem] text-[#ffd700]/10 transition-colors duration-500 group-hover:text-[#ffd700]/20"
+				class="pointer-events-none absolute -top-16 -left-4 font-headline text-[8rem] text-[#ffd700]/20 transition-colors duration-500 group-hover:text-[#ffd700]/40"
 			>
 				01
 			</div>
@@ -115,13 +117,13 @@
 		</div>
 		<div class="group relative">
 			<div
-				class="pointer-events-none absolute -top-16 -left-4 font-headline text-[8rem] text-[#ffd700]/10 transition-colors duration-500 group-hover:text-[#ffd700]/20"
+				class="pointer-events-none absolute -top-16 -left-4 font-headline text-[8rem] text-[#ffd700]/20 transition-colors duration-500 group-hover:text-[#ffd700]/40"
 			>
 				02
 			</div>
 			<div class="relative z-10">
 				<span
-					class="mb-6 text-3xl text-[##705d00]"
+					class="mb-6 text-3xl text-[#705d00]"
 					data-icon="auto_awesome"
 					id="material-symbols-outlined"><TrophyIcon class="mb-4" /></span
 				>
@@ -133,7 +135,7 @@
 		</div>
 		<div class="group relative">
 			<div
-				class="pointer-events-none absolute -top-16 -left-4 font-headline text-[8rem] text-[#ffd700]/10 transition-colors duration-500 group-hover:text-[#ffd700]/20"
+				class="pointer-events-none absolute -top-16 -left-4 font-headline text-[8rem] text-[#ffd700]/20 transition-colors duration-500 group-hover:text-[#ffd700]/40"
 			>
 				03
 			</div>
@@ -149,7 +151,7 @@
 		</div>
 		<div class="group relative">
 			<div
-				class="pointer-events-none absolute -top-16 -left-4 font-headline text-[8rem] text-[#ffd700]/10 transition-colors duration-500 group-hover:text-[#ffd700]/20"
+				class="pointer-events-none absolute -top-16 -left-4 font-headline text-[8rem] text-[#ffd700]/20 transition-colors duration-500 group-hover:text-[#ffd700]/40"
 			>
 				04
 			</div>

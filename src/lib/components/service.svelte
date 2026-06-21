@@ -3,7 +3,7 @@
 	import { scrollReveal } from '$lib/index';
 </script>
 
-<section class="bg-[#f9f9f9] px-8 py-32 lg:px-24" id="services" use:scrollReveal>
+<section class="bg-[#f9f9f9] px-8 py-32 lg:px-24" id="about" use:scrollReveal>
 	<div class="mx-auto max-w-screen-2xl">
 		<div class="mb-24 grid grid-cols-1 gap-16 lg:grid-cols-12">
 			<div class="lg:col-span-5">

@@ -9,7 +9,7 @@
 	};
 </script>
 
-<nav class="fixed top-0 z-50 w-full bg-white/70 backdrop-blur-xl">
+<nav class="fixed top-0 z-50 w-full bg-white backdrop-blur-xl">
 	<div class="mx-auto flex w-full max-w-screen-2xl items-center justify-between px-8 py-6">
 		<div class="flex items-center gap-4">
 			<!-- Brand Logo -->
@@ -29,19 +29,19 @@
 		<!-- Desktop Nav-Bar  -->
 		<div class="hidden items-center space-x-10 md:flex">
 			<a
-				class="font-serif text-lg tracking-tight text-zinc-600 italic transition-colors duration-500 hover:scale-[1.02] hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
+				class="font-serif text-lg tracking-tight text-zinc-600 italic transition-colors duration-500 hover:scale-[1.02] hover:text-zinc-900 dark:hover:text-zinc-100"
 				href="#about">About</a
 			>
 			<a
-				class="font-serif text-lg tracking-tight text-zinc-600 italic transition-colors duration-500 hover:scale-[1.02] hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
+				class="font-serif text-lg tracking-tight text-zinc-600 italic transition-colors duration-500 hover:scale-[1.02] hover:text-zinc-900 dark:hover:text-zinc-100"
 				href="#portfolio">Portfolio</a
 			>
 			<a
-				class="font-serif text-lg tracking-tight text-zinc-600 italic transition-colors duration-500 hover:scale-[1.02] hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
+				class="font-serif text-lg tracking-tight text-zinc-600 italic transition-colors duration-500 hover:scale-[1.02] hover:text-zinc-900 dark:hover:text-zinc-100"
 				href="#services">Services</a
 			>
 			<a
-				class="font-serif text-lg tracking-tight text-zinc-600 italic transition-colors duration-500 hover:scale-[1.02] hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
+				class="font-serif text-lg tracking-tight text-zinc-600 italic transition-colors duration-500 hover:scale-[1.02] hover:text-zinc-900 dark:hover:text-zinc-100"
 				href="#process">Process</a
 			>
 		</div>
@@ -74,7 +74,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="#services" onclick={toggleMenu} class="transition-colors hover:text-[#ffd700]">
+				<a href="#portfolio" onclick={toggleMenu} class="transition-colors hover:text-[#ffd700]">
 					Services
 				</a>
 			</li>

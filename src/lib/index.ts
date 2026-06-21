@@ -70,7 +70,7 @@ export function scrollReveal(
 	options = {
 		threshold: 0.15,
 		delay: 0,
-		duration: 600,
+		duration: 500,
 		direction: 'up' as 'up' | 'left' | 'right'
 	}
 ) {
