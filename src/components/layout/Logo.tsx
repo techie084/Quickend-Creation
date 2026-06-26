@@ -19,6 +19,7 @@ const Logo = ({
 
   return (
     <div className={`flex items-center gap-3 ${className}`}>
+      {/* // <img className="" src="/public/logo.jpg" alt="Quickened Creations Logo" /> */}
       {/* Logo Mark */}
       <svg
         width={s.mark}

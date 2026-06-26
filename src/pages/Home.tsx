@@ -52,28 +52,28 @@ const portfolioItems = [
     title: "Church Livestream Production",
     category: "Videography",
     image:
-      "https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?w=800&q=80",
+      "/public/action-img.jpg",
   },
   {
     id: 2,
     title: "Music Recording Session",
     category: "Music Production",
     image:
-      "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=600&q=80",
+      "/public/studio-img.jpg",
   },
   {
     id: 3,
     title: "Aerial Event Coverage",
     category: "Drone Coverage",
     image:
-      "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=600&q=80",
+      "/public/drone-img.jpg",
   },
 ];
 
 const heroWorkCards = [
-  "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=400&q=80",
-  "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=400&q=80",
-  "https://images.unsplash.com/photo-1452421822248-d4c2b47f0c81?w=400&q=80",
+  "/public/camera-img.jpg",
+  "/public/mic-img.jpg",
+  "/public/study-img.jpg",
 ];
 
 const marqueeItems = [

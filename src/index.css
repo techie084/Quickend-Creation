@@ -187,15 +187,15 @@
 
 @layer utilities {
   .text-hero {
-    font-size: clamp(3rem, 7vw, 6.25rem);
+    font-size: clamp(3rem, 8vw, 7.3rem);
     line-height: 0.9;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.01em;
   }
 
   .text-section {
     font-size: clamp(2.25rem, 4.4vw, 3.5rem);
     line-height: 0.95;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.02em;
   }
 
   .min-h-50 {
@@ -358,7 +358,7 @@ body,
 }
 
 /* ============================================
-   SCROLL REVEAL
+  SCROLL REVEAL
    ============================================ */
 .reveal {
   opacity: 0;
@@ -394,7 +394,7 @@ body,
 }
 
 /* ============================================
-   TEXT CLIP REVEAL (section headlines)
+  TEXT CLIP REVEAL (section headlines)
    ============================================ */
 @keyframes clip-reveal {
   from {
@@ -410,7 +410,7 @@ body,
 }
 
 /* ============================================
-   CUSTOM CURSOR
+  CUSTOM CURSOR
    ============================================ */
 .custom-cursor {
   position: fixed;

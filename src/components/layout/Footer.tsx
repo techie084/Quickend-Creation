@@ -61,7 +61,7 @@ const Footer = () => {
             </h4>
             <div className="flex flex-col gap-4 mb-6">
               <a
-                href="https://wa.me/234000000000"
+                href="https://wa.me/+2348078209879"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 px-4 py-3 bg-[#25D366]/10 border border-[#25D366]/30 rounded-xl text-sm font-body text-white hover:bg-[#25D366]/20 transition-all duration-200"
