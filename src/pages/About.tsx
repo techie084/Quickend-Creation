@@ -36,7 +36,7 @@ const About = () => {
           className="absolute inset-0 flex items-center justify-center pointer-events-none select-none"
           aria-hidden="true"
         >
-          <span className="font-display text-[22vw] text-white/[0.03] leading-none tracking-widest">
+          <span className="font-display text-[22vw] text-white/3 leading-none tracking-widest">
             PNEUMA
           </span>
         </div>
@@ -121,7 +121,7 @@ const About = () => {
       ================================================ */}
       <section className="bg-qc-dark py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 grid md:grid-cols-2 gap-12">
-          <div className="reveal p-10 rounded-2xl border border-white/10 bg-white/[0.02]">
+          <div className="reveal p-10 rounded-2xl border border-white/10 bg-white/2">
             <SectionLabel text="Our Vision" color="gold" className="mb-6" />
             <h2 className="font-display text-4xl text-white mb-6 leading-tight">
               OUR VISION
@@ -134,7 +134,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="reveal reveal-delay-2 p-10 rounded-2xl border border-qc-gold/20 bg-qc-gold/[0.03]">
+          <div className="reveal reveal-delay-2 p-10 rounded-2xl border border-qc-gold/20 bg-qc-gold/3">
             <SectionLabel text="Our Identity" color="gold" className="mb-6" />
             <h2 className="font-display text-4xl text-white mb-6 leading-tight">
               OUR IDENTITY

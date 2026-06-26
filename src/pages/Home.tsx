@@ -124,7 +124,7 @@ const Home = () => {
           className="absolute inset-0 flex items-center justify-center pointer-events-none select-none"
           aria-hidden="true"
         >
-          <span className="font-display text-[20vw] text-white/[0.03] leading-none tracking-widest">
+          <span className="font-display text-[20vw] text-white/3 leading-none tracking-widest">
             PNEUMA
           </span>
         </div>
@@ -208,7 +208,7 @@ const Home = () => {
                   className="w-full h-full object-cover"
                   crossOrigin="anonymous"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-qc-dark/60 to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-qc-dark/60 to-transparent" />
               </div>
             ))}
           </div>
@@ -222,7 +222,7 @@ const Home = () => {
           <span className="text-white/40 text-xs font-body tracking-widest uppercase">
             Scroll
           </span>
-          <div className="w-px h-8 bg-gradient-to-b from-white/30 to-transparent" />
+          <div className="w-px h-8 bg-linear-to-b from-white/30 to-transparent" />
         </div>
       </section>
 
@@ -323,14 +323,14 @@ const Home = () => {
 
           {/* Right: Image */}
           <div className="reveal reveal-delay-2 relative">
-            <div className="rounded-2xl overflow-hidden aspect-[4/3] shadow-hover">
+            <div className="rounded-2xl overflow-hidden aspect-4/3 shadow-hover">
               <img
                 src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=800&q=80"
                 alt="Mobile Studio Setup"
                 className="w-full h-full object-cover"
                 crossOrigin="anonymous"
               />
-              <div className="absolute inset-0 bg-gradient-to-tr from-qc-black/60 to-transparent" />
+              <div className="absolute inset-0 bg-linear-to-tr from-qc-black/60 to-transparent" />
             </div>
             {/* Gold accent border */}
             <div className="absolute -inset-2 border border-qc-gold/20 rounded-3xl pointer-events-none" />
@@ -347,7 +347,7 @@ const Home = () => {
           className="absolute inset-0 flex items-center justify-end pr-16 pointer-events-none select-none"
           aria-hidden="true"
         >
-          <span className="font-display text-[25vw] text-white/[0.03] leading-none">
+          <span className="font-display text-[25vw] text-white/3 leading-none">
             QC
           </span>
         </div>
@@ -412,7 +412,7 @@ const Home = () => {
                 className="w-full h-64 md:h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 crossOrigin="anonymous"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-qc-black/80 via-qc-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+              <div className="absolute inset-0 bg-linear-to-t from-qc-black/80 via-qc-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
                 <span className="text-qc-gold font-body text-xs tracking-widest uppercase mb-1">
                   {portfolioItems[0].category}
                 </span>
@@ -435,7 +435,7 @@ const Home = () => {
                   className="w-full h-44 md:h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   crossOrigin="anonymous"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-qc-black/80 via-qc-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
+                <div className="absolute inset-0 bg-linear-to-t from-qc-black/80 via-qc-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
                   <span className="text-qc-gold font-body text-xs tracking-widest uppercase mb-1">
                     {item.category}
                   </span>
@@ -469,7 +469,7 @@ const Home = () => {
             className="mb-8 reveal"
           />
 
-          <div className="relative min-h-[200px]">
+          <div className="relative min-h-50">
             {testimonials.map((t, i) => (
               <div
                 key={t.id}

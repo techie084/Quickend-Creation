@@ -185,6 +185,24 @@
   }
 }
 
+@layer utilities {
+  .text-hero {
+    font-size: clamp(3rem, 7vw, 6.25rem);
+    line-height: 0.9;
+    letter-spacing: 0.04em;
+  }
+
+  .text-section {
+    font-size: clamp(2.25rem, 4.4vw, 3.5rem);
+    line-height: 0.95;
+    letter-spacing: 0.03em;
+  }
+
+  .min-h-50 {
+    min-height: 12.5rem;
+  }
+}
+
 html,
 body,
 #root {

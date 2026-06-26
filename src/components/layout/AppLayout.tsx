@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "./Navbar";
-import FloatingMobileNav from "./FloatingMobileNav";
+// import FloatingMobileNav from "./FloatingMobileNav";
 import CustomCursor from "./CustomCursor";
 
 const AppLayout = () => {
@@ -8,7 +8,7 @@ const AppLayout = () => {
     <>
       <CustomCursor />
       <Navbar />
-      <FloatingMobileNav />
+      {/* <FloatingMobileNav /> */}
       <main>
         <Outlet />
       </main>
