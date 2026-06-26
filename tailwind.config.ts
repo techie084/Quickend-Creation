@@ -1,5 +1,6 @@
-import type { Config } from 'tailwindcss';
+import type { Config } from "tailwindcss";
+import tailwindcssAnimate from "tailwindcss-animate";
 
 export default {
-	content: ['./src/**/*.{html,js,svelte,ts}'],
+  plugins: [tailwindcssAnimate],
 } satisfies Config;
