@@ -1,5 +1,6 @@
 import * as React from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { HugeiconsIcon } from "@hugeicons/react";
+import { ChevronLeft, ChevronRight } from "@hugeicons/core-free-icons";
 import { DayPicker } from "react-day-picker";
 
 import { cn } from "@/lib/utils";
@@ -54,9 +55,14 @@ function Calendar({
       components={{
         Chevron: ({ className: iconClassName, orientation, ...props }) =>
           orientation === "left" ? (
-            <ChevronLeft className={cn("h-4 w-4", iconClassName)} {...props} />
+            <HugeiconsIcon
+              icon={ChevronLeft}
+              className={cn("h-4 w-4", iconClassName)}
+              {...props}
+            />
           ) : (
-            <ChevronRight
+            <HugeiconsIcon
+              icon={ChevronRight}
               className={cn("h-4 w-4", iconClassName)}
               {...props}
             />

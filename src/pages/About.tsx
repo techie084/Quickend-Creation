@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
+import { HugeiconsIcon } from "@hugeicons/react";
+import { ArrowRight } from "@hugeicons/core-free-icons";
 import Footer from "@/components/layout/Footer";
 import SectionLabel from "@/components/ui/SectionLabel";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
@@ -209,7 +210,7 @@ const About = () => {
             to="/contact"
             className="inline-flex items-center gap-3 px-10 py-5 bg-qc-gold text-qc-black font-body font-bold text-sm rounded-pill uppercase tracking-wider hover:scale-105 hover:shadow-gold transition-all duration-200 animate-pulse-gold"
           >
-            Start a Project <ArrowRight size={16} />
+            Start a Project <HugeiconsIcon icon={ArrowRight} size={16} />
           </Link>
         </div>
       </section>

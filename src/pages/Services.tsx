@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
+import { HugeiconsIcon } from "@hugeicons/react";
 import {
   ArrowRight,
   Search,
   Lightbulb,
   Paintbrush,
   CheckCircle,
-} from "lucide-react";
+} from "@hugeicons/core-free-icons";
 import Footer from "@/components/layout/Footer";
 import ServiceCard from "@/components/ui/ServiceCard";
 import SectionLabel from "@/components/ui/SectionLabel";
@@ -53,7 +54,7 @@ const Services = () => {
           className="absolute inset-0 flex items-center justify-end pr-8 pointer-events-none select-none"
           aria-hidden="true"
         >
-          <span className="font-display text-[30vw] text-white/[0.03] leading-none">
+          <span className="font-display text-[30vw] text-white/3 leading-none">
             13+
           </span>
         </div>
@@ -130,14 +131,14 @@ const Services = () => {
               return (
                 <div
                   key={step.number}
-                  className={`reveal reveal-delay-${i + 1} group relative p-8 rounded-2xl border border-white/10 hover:border-qc-gold/40 transition-all duration-300 bg-white/[0.02]`}
+                  className={`reveal reveal-delay-${i + 1} group relative p-8 rounded-2xl border border-white/10 hover:border-qc-gold/40 transition-all duration-300 bg-white/2`}
                 >
                   {/* Step number */}
                   <div className="font-display text-6xl text-qc-gold/20 leading-none mb-4 group-hover:text-qc-gold/40 transition-colors duration-300">
                     {step.number}
                   </div>
                   <div className="w-10 h-10 rounded-xl bg-qc-gold/10 flex items-center justify-center mb-5 group-hover:bg-qc-gold/20 transition-colors duration-300">
-                    <Icon size={18} className="text-qc-gold" />
+                    <HugeiconsIcon icon={Icon} size={18} className="text-qc-gold" />
                   </div>
                   <h3 className="font-display text-2xl text-white tracking-wide mb-3">
                     {step.title.toUpperCase()}
@@ -176,7 +177,7 @@ const Services = () => {
             to="/contact"
             className="inline-flex items-center gap-3 px-10 py-5 bg-qc-dark text-white font-body font-bold text-sm rounded-pill uppercase tracking-wider hover:scale-105 hover:shadow-hover transition-all duration-200"
           >
-            Book a Free Consultation <ArrowRight size={16} />
+            Book a Free Consultation <HugeiconsIcon icon={ArrowRight} size={16} />
           </Link>
         </div>
       </section>

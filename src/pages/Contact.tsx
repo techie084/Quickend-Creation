@@ -1,5 +1,6 @@
 import { useState, type FormEvent } from "react";
-import { CheckCircle, MessageCircle, Mail, Instagram } from "lucide-react";
+import {HugeiconsIcon} from "@hugeicons/react";
+import { CheckCircle, MessageCircle, Mail, Instagram } from "@hugeicons/core-free-icons";
 import Footer from "@/components/layout/Footer";
 import SectionLabel from "@/components/ui/SectionLabel";
 import { services } from "@/data/services";
@@ -301,7 +302,7 @@ const Contact = () => {
               /* SUCCESS STATE */
               <div className="flex flex-col items-center justify-center text-center py-20 gap-6">
                 <div className="w-20 h-20 rounded-full bg-qc-gold/10 border-2 border-qc-gold flex items-center justify-center animate-scale-in">
-                  <CheckCircle size={36} className="text-qc-gold" />
+                  <HugeiconsIcon icon={CheckCircle} size={36} />
                 </div>
                 <div>
                   <h3 className="font-display text-4xl text-qc-black mb-3">
@@ -355,7 +356,7 @@ const Contact = () => {
                 className="flex items-center gap-4 p-5 bg-[#25D366]/10 border border-[#25D366]/30 rounded-2xl mb-4 hover:bg-[#25D366]/20 hover:border-[#25D366]/50 transition-all duration-200 group"
               >
                 <div className="w-12 h-12 rounded-xl bg-[#25D366] flex items-center justify-center shrink-0">
-                  <MessageCircle size={20} className="text-white" />
+                  <HugeiconsIcon icon={MessageCircle} size={20} />
                 </div>
                 <div>
                   <p className="font-body font-semibold text-qc-black text-sm">
@@ -373,7 +374,7 @@ const Contact = () => {
                 className="flex items-center gap-4 p-5 bg-white border border-qc-black/10 rounded-2xl mb-4 hover:border-qc-gold/40 hover:shadow-card transition-all duration-200 group"
               >
                 <div className="w-12 h-12 rounded-xl bg-qc-dark flex items-center justify-center shrink-0">
-                  <Mail size={20} className="text-qc-gold" />
+                  <HugeiconsIcon icon={Mail} size={20} className="text-qc-gold" />
                 </div>
                 <div>
                   <p className="font-body font-semibold text-qc-black text-sm">
@@ -399,7 +400,7 @@ const Contact = () => {
                       "linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888)",
                   }}
                 >
-                  <Instagram size={20} className="text-white" />
+                  <HugeiconsIcon icon={Instagram} size={20} className="text-white" />
                 </div>
                 <div>
                   <p className="font-body font-semibold text-qc-black text-sm">

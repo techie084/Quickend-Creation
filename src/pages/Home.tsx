@@ -1,6 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import { HugeiconsIcon } from "@hugeicons/react";
+import {
+  ArrowRight,
+  ChevronLeft,
+  ChevronRight,
+} from "@hugeicons/core-free-icons";
 import Footer from "@/components/layout/Footer";
 import ServiceCard from "@/components/ui/ServiceCard";
 import SectionLabel from "@/components/ui/SectionLabel";
@@ -52,28 +57,28 @@ const portfolioItems = [
     title: "Church Livestream Production",
     category: "Videography",
     image:
-      "/public/action-img.jpg",
+      "/action-img.jpg",
   },
   {
     id: 2,
     title: "Music Recording Session",
     category: "Music Production",
     image:
-      "/public/studio-img.jpg",
+      "/studio-img.jpg",
   },
   {
     id: 3,
     title: "Aerial Event Coverage",
     category: "Drone Coverage",
     image:
-      "/public/drone-img.jpg",
+      "/drone-img.jpg",
   },
 ];
 
 const heroWorkCards = [
-  "/public/camera-img.jpg",
-  "/public/mic-img.jpg",
-  "/public/study-img.jpg",
+  "/camera-img.jpg",
+  "/mic-img.jpg",
+  "/study-img.jpg",
 ];
 
 const marqueeItems = [
@@ -179,7 +184,7 @@ const Home = () => {
                 to="/services"
                 className="px-8 py-4 border-2 border-white/30 text-white font-body font-medium text-base rounded-pill uppercase tracking-wider transition-all duration-200 hover:border-qc-gold hover:text-qc-gold flex items-center gap-2"
               >
-                Our Services <ArrowRight size={16} />
+                Our Services <HugeiconsIcon icon={ArrowRight} size={16} strokeWidth={1.5} />
               </Link>
             </div>
           </div>
@@ -271,7 +276,7 @@ const Home = () => {
               to="/services"
               className="px-8 py-3.5 border-2 border-qc-dark/30 text-qc-dark font-body font-semibold text-sm rounded-pill uppercase tracking-wider hover:border-qc-dark hover:bg-qc-dark hover:text-white transition-all duration-200 flex items-center gap-2"
             >
-              See All 13 Services <ArrowRight size={15} />
+              See All 13 Services <HugeiconsIcon icon={ArrowRight} size={15} />
             </Link>
           </div>
         </div>
@@ -342,7 +347,7 @@ const Home = () => {
           SECTION 5 — ABOUT TEASER
       ================================================ */}
       <section className="relative bg-qc-dark py-24 overflow-hidden">
-        {/* Faint QC lettermark bg */}
+        {/* Faint QC letter-mark bg */}
         <div
           className="absolute inset-0 flex items-center justify-end pr-16 pointer-events-none select-none"
           aria-hidden="true"
@@ -372,7 +377,7 @@ const Home = () => {
               to="/about"
               className="inline-flex items-center gap-2 px-7 py-3.5 border border-white/30 text-white font-body font-medium text-sm rounded-pill uppercase tracking-wider hover:border-qc-gold hover:text-qc-gold transition-all duration-200"
             >
-              Our Story <ArrowRight size={14} />
+              Our Story <HugeiconsIcon icon={ArrowRight} size={14} />
             </Link>
           </div>
         </div>
@@ -398,7 +403,7 @@ const Home = () => {
               to="/services"
               className="hidden md:flex items-center gap-2 text-qc-dark/70 font-body text-sm hover:text-qc-dark transition-colors duration-200"
             >
-              View All Work <ArrowRight size={14} />
+              View All Work <HugeiconsIcon icon={ArrowRight}  size={14} />
             </Link>
           </div>
 
@@ -452,7 +457,7 @@ const Home = () => {
               to="/services"
               className="flex items-center gap-2 text-qc-dark/70 font-body text-sm border border-qc-dark/20 px-6 py-3 rounded-pill hover:border-qc-dark hover:text-qc-dark transition-all duration-200"
             >
-              View All Work <ArrowRight size={14} />
+              View All Work <HugeiconsIcon icon={ArrowRight} size={14} />
             </Link>
           </div>
         </div>
@@ -508,7 +513,7 @@ const Home = () => {
               className="w-10 h-10 rounded-full border border-qc-dark/20 flex items-center justify-center text-qc-dark/60 hover:border-qc-dark hover:text-qc-dark transition-all duration-200"
               aria-label="Previous testimonial"
             >
-              <ChevronLeft size={16} />
+              <HugeiconsIcon icon={ChevronLeft} size={16} strokeWidth={1.5} />
             </button>
             <div className="flex gap-2">
               {testimonials.map((_, i) => (
@@ -529,7 +534,7 @@ const Home = () => {
               className="w-10 h-10 rounded-full border border-qc-dark/20 flex items-center justify-center text-qc-dark/60 hover:border-qc-dark hover:text-qc-dark transition-all duration-200"
               aria-label="Next testimonial"
             >
-              <ChevronRight size={16} />
+              <HugeiconsIcon icon={ChevronRight} size={16} strokeWidth={1.5} />
             </button>
           </div>
         </div>
@@ -552,7 +557,7 @@ const Home = () => {
             to="/contact"
             className="inline-flex items-center gap-3 px-10 py-5 bg-qc-black text-white font-body font-bold text-sm rounded-pill uppercase tracking-wider hover:scale-105 hover:shadow-hover transition-all duration-200"
           >
-            Start a Project <ArrowRight size={16} />
+            Start a Project <HugeiconsIcon icon={ArrowRight} size={16} />
           </Link>
         </div>
       </section>

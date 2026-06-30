@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
+import { HugeiconsIcon } from "@hugeicons/react";
+import { ArrowRight } from "@hugeicons/core-free-icons";
 
 const NotFound = () => {
   const location = useLocation();
@@ -19,7 +20,7 @@ const NotFound = () => {
         className="absolute inset-0 flex items-center justify-center pointer-events-none select-none"
         aria-hidden="true"
       >
-        <span className="font-display text-[30vw] text-white/[0.03] leading-none">
+        <span className="font-display text-[30vw] text-white/3 leading-none">
           404
         </span>
       </div>
@@ -41,7 +42,7 @@ const NotFound = () => {
           to="/"
           className="inline-flex items-center gap-3 px-8 py-4 bg-qc-gold text-qc-black font-body font-bold text-sm rounded-full uppercase tracking-wider hover:scale-105 hover:shadow-gold transition-all duration-200"
         >
-          Back to Home <ArrowRight size={15} />
+          Back to Home <HugeiconsIcon icon={ArrowRight} size={16} />
         </Link>
       </div>
     </div>

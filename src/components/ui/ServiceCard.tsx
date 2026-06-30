@@ -1,4 +1,5 @@
-import { ArrowRight } from "lucide-react";
+import { HugeiconsIcon } from "@hugeicons/react";
+import { ArrowRight } from "@hugeicons/core-free-icons";
 import { Link } from "react-router-dom";
 import { Service } from "@/data/services";
 
@@ -54,7 +55,11 @@ const ServiceCard = ({
           className={`w-12 h-12 rounded-xl flex items-center justify-center mb-5 transition-all duration-300 group-hover:scale-110`}
           style={{ backgroundColor: `${service.color ?? "#F5C518"}20` }}
         >
-          <Icon size={22} style={{ color: service.color ?? "#F5C518" }} />
+          <HugeiconsIcon
+  icon={service.icon}
+  size={22}
+  style={{ color: service.color ?? "#F5C518" }}
+/>
         </div>
         <h3
           className={`font-display text-2xl tracking-wide mb-3 leading-none ${
@@ -81,7 +86,8 @@ const ServiceCard = ({
         onClick={(e) => e.stopPropagation()}
       >
         Learn More
-        <ArrowRight
+        <HugeiconsIcon
+          icon={ArrowRight}
           size={14}
           className="transition-transform duration-200 group-hover:translate-x-1"
         />

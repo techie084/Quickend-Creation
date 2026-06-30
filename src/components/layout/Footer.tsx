@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
+import { HugeiconsIcon } from "@hugeicons/react"; 
 import {
   Instagram,
   Youtube,
   Facebook,
   MessageCircle,
   MapPin,
-} from "lucide-react";
+} from "@hugeicons/core-free-icons"
 import Logo from "./Logo";
 
 const Footer = () => {
@@ -24,7 +25,7 @@ const Footer = () => {
               become impactful realities. Spirit-inspired. Excellence-driven.
             </p>
             <div className="flex items-center gap-1 text-white/40 text-xs font-body">
-              <MapPin size={12} />
+              <HugeiconsIcon icon={MapPin} size={12} />
               <span>Nigeria — Serving Clients Worldwide</span>
             </div>
           </div>
@@ -66,7 +67,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 px-4 py-3 bg-[#25D366]/10 border border-[#25D366]/30 rounded-xl text-sm font-body text-white hover:bg-[#25D366]/20 transition-all duration-200"
               >
-                <MessageCircle size={16} className="text-[#25D366]" />
+                <HugeiconsIcon icon={MessageCircle} size={16} className="text-[#25D366]" />
                 <span>Chat on WhatsApp</span>
               </a>
             </div>
@@ -84,7 +85,7 @@ const Footer = () => {
                   aria-label={label}
                   className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white/60 hover:text-qc-gold hover:border-qc-gold transition-all duration-200"
                 >
-                  <Icon size={16} />
+                  <HugeiconsIcon icon={Icon} size={16} />
                 </a>
               ))}
             </div>

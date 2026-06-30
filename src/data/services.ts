@@ -13,18 +13,19 @@ import {
   Globe,
   Lightbulb,
   Truck,
-  type LucideIcon,
-} from "lucide-react";
+} from "@hugeicons/core-free-icons";
+import type { ElementType } from "react";
 
-export interface Service {
+export type Service = {
   id: number;
   name: string;
   shortDesc: string;
   longDesc: string;
-  icon: LucideIcon;
+  // allow either a React component or raw icon object
+  icon: ElementType | any;
   isPremium?: boolean;
   color?: string;
-}
+};
 
 export const services: Service[] = [
   {
